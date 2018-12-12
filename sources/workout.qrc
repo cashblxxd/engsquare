@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="WorkoutWindow">
+    <file>workout.png</file>
+    <file>sound.png</file>
+  </qresource>
+</RCC>
