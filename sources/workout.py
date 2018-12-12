@@ -52,15 +52,14 @@ class WorkoutWindow(QMainWindow, QWidget):
                 self.scores[i[0]] = float(i[2])
 
     def run(self):
-        if self.sender().text() == self.answer:
-            print('Correct!')
-            self.correct += 1
-            self.scores[self.label.text()] += 1
-            self.label_3.setText("Correct\n\nCorrect answer:\n\n" + self.answer)
-        else:
-            print('Incorrect')
-            self.scores[self.label.text()] -= 0.8
-            self.label_3.setText("Incorrect\n\nCorrect answer:\n\n" + self.answer)
+        if self.label.text() in self.scores:
+            if self.sender().text() == self.answer:
+                self.correct += 1
+                self.scores[self.label.text()] += 1
+                self.label_3.setText("Correct\n\nCorrect answer:\n\n" + self.answer)
+            else:
+                self.scores[self.label.text()] -= 0.8
+                self.label_3.setText("Incorrect\n\nCorrect answer:\n\n" + self.answer)
         if not self.x:
             self.end()
             return
