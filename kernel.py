@@ -15,6 +15,7 @@ class StartWindow(QMainWindow):
         #self.pushButton_2.clicked.connect(self.run_vocabulary)
         #self.pushButton_3.clicked.connect(self.run_guide)
         #self.pushButton_4.clicked.connect(self.run_settings)
+        #commit #3
 
     def run_workout(self):
         os.system("python3 sources/workout.py")
