@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Form</class>
- <widget class="QWidget" name="Form">
+ <class>Workout_session</class>
+ <widget class="QWidget" name="Workout_session">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -219,7 +219,7 @@
   </widget>
  </widget>
  <resources>
-  <include location="sources/workout.qrc"/>
+  <include location="workout.qrc"/>
  </resources>
  <connections/>
  <buttongroups>

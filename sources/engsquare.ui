@@ -255,7 +255,7 @@ p, li { white-space: pre-wrap; }
   <zorder>pushButton</zorder>
  </widget>
  <resources>
-  <include location="sources/resources.qrc"/>
+  <include location="resources.qrc"/>
  </resources>
  <connections/>
 </ui>

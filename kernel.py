@@ -12,7 +12,7 @@ class StartWindow(QMainWindow):
         uic.loadUi('sources/engsquare.ui', self)
         self.vocabulary, self.count = {}, 0
         self.pushButton.clicked.connect(self.run_workout)
-        #self.pushButton_2.clicked.connect(self.run_vocabulary)
+        self.pushButton_2.clicked.connect(self.run_vocabulary)
         #self.pushButton_3.clicked.connect(self.run_guide)
         #self.pushButton_4.clicked.connect(self.run_settings)
 
@@ -21,7 +21,7 @@ class StartWindow(QMainWindow):
 
 
     def run_vocabulary(self):
-        os.system("python3 vocabulary.py")
+        os.system("python3 sources/vocabulary.py")
 
 
     def run_settings(self):
