@@ -1,0 +1,4 @@
+{
+    "main_sound": "False",
+    "sound_on_click": "False"
+}
