@@ -1,7 +1,7 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow
 import os
-from scripts.engsquare import Ui_StartWIndow
+from engsquare import Ui_StartWIndow
 
 
 class StartWindow(QMainWindow, Ui_StartWIndow):
