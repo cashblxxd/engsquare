@@ -1,7 +1,7 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow
 import json
-from scripts.settings_gui import Ui_Form
+from settings_gui import Ui_Form
 
 
 class SettingsWindow(QMainWindow, Ui_Form):

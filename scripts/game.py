@@ -3,7 +3,7 @@ from PyQt5.QtWidgets import QApplication, QMainWindow
 import PyQt5.QtGui as QtGui
 from random import randint
 import csv
-from scripts.game_gui import Ui_Workout_session
+from game_gui import Ui_Workout_session
 
 
 class GameWindow(QMainWindow,Ui_Workout_session):
@@ -17,7 +17,7 @@ class GameWindow(QMainWindow,Ui_Workout_session):
         self.length = len(self.d)
         self.words = list(self.d.values())
         self.x = list(self.d.keys())
-        self.label.setText(self.x.pop(randint(0, self.length)))
+        self.label.setText(self.x.pop(randint(0, self.length-1)))
         self.label_3.setText('-')
         self.answer = self.d[self.label.text()]
         self.pushButton_5.clicked.connect(self.run)
