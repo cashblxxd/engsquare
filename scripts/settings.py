@@ -31,6 +31,7 @@ class SettingsWindow(QMainWindow, Ui_Form):
         with open('sources/settings.txt', 'w') as f:
             f.write('{\n    \"main_sound\": \"' + str(self.main) + '\",\n    \"sound_on_click\": \"'
                     + str(self.buttons) + '\"\n}')
+            sys.exit()
 
 
 if __name__ == '__main__':
